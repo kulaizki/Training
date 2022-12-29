@@ -1,31 +1,21 @@
 #include <iostream>
 #include <vector>
-#include <string>
+#include <algorithm>
+#include <unordered_map>
 
 using namespace std;
 
-bool isAnagram(string s, string t) {
-    if (s.size() != t.size())
-        return false;
-
-    vector<int> h(26);
-
-    for (int i=0; i<s.size(); i++)
-        h[s[i] - 'a']++;
-
-    for (int i=0; i<t.size(); i++) {
-        int x = --h[t[i] - 'a'];
-        if (x < 0) return false;
-    }
-
-    return true;
+bool containsDuplicate(vector<int>& nums) {
+    unordered_map<int, int> mp;
+    for (int x: nums) mp[x]++;
+    for (int x: nums) if (mp[x] > 1) return true;
+        
+    return false;
 }
 
 int main()
 {
-    string s = "hello", t = "elloh";
-
-    isAnagram(s, t) ? cout << "True" : cout << "False";
-
-    return 0;
+    vector<int> v {1,2,3,4};
+    
+    containsDuplicate(v) ? cout << "true" : cout << "false";
 }
