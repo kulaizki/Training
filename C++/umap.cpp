@@ -27,7 +27,7 @@ int main()
 
     // Traversing 
     for (auto x : ump)
-        cout << x.first << " " << x.second << '\n';
+        cout << x.second << '\n';
 
     for (auto x : mp)
         cout << x.first << " " << x.second << '\n';
