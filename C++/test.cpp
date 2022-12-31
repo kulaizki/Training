@@ -1,21 +1,22 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
 #include <unordered_map>
+#include <string>
 
 using namespace std;
 
-bool containsDuplicate(vector<int>& nums) {
-    unordered_map<int, int> mp;
-    for (int x: nums) mp[x]++;
-    for (int x: nums) if (mp[x] > 1) return true;
-        
-    return false;
+bool scramble(const string& s1, const string & s2) {
+    unordered_map<char, int> h1;
+    unordered_map<char, int> h2;
+
+    for (int i: s1) h1[i]++;
+    for (int i: s2) h2[i]++;
+    for (const auto& [key, value] : h2) {
+        if (h1[key] < value) { return false; };
+    }
+    return true;
 }
 
-int main()
-{
-    vector<int> v {1,2,3,4};
-    
-    containsDuplicate(v) ? cout << "true" : cout << "false";
+int main() {
+    scramble("rkqodlw", "world") ? cout << "true\n" : cout << "false\n";
+    scramble("cedewaraaossoqqyt", "codewars") ? cout << "true\n" :  cout << "false\n";
 }
