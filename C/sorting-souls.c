@@ -42,7 +42,7 @@ void display(int arr[]) {
 int *sorting_souls(int arr[]) {
     int max1 = INT_MIN,
         max2 = INT_MIN,
-        ctr = 1;
+        ctr = 0;
     
     for (int i = 1; i <= arr[0]; i++) {
         if (arr[i] > max1)
@@ -58,6 +58,7 @@ int *sorting_souls(int arr[]) {
     int *sorted_souls = (int *)malloc(sizeof(int) * arr[0] - ctr+1),
         count = 1;
     sorted_souls[0] = arr[0] - ctr + 1;
+    if (arr[0] == 1) sorted_souls[0] = 0;
     for (int i = ctr; i <= arr[0]; i++)
         sorted_souls[count++] = arr[i];
 
