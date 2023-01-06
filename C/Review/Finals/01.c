@@ -19,7 +19,7 @@ void main() {
 
     //Second for loop
     for (i=0; i < count; i++) {
-        if (series[i] == 6)
+        if (*(series+i) == 6)
             break;
             
     }
