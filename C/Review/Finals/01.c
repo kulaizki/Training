@@ -21,7 +21,6 @@ void main() {
     for (i=0; i < count; i++) {
         if (*(series+i) == 6)
             break;
-            
     }
 
     loc = i == count ? -1 : i+1;
