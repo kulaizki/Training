@@ -19,7 +19,7 @@ int main()
             else if (*msg == cipher2[i])
                 *msg = cipher[i];
         }
-        printf("%c", *msg++);
+        printf("%c", *msg++); // prints current character and moves to the next address
     }
     printf(" !!");
 }
