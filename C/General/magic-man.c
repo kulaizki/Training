@@ -10,7 +10,7 @@ int main() {
   	int num;
   	int* answer;
   
-    //user input
+    	//user input
   	scanf("%d",&num);
   
   	//function call
