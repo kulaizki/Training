@@ -36,7 +36,7 @@ int main()
     }
 
     cout << "\nDescending sort:\n";
-    sort(people.begin(), people.end(), compare);
+    sort(people.begin(), people.end(), compare); // compare for descending order
     for (auto i: people) {
         cout << i.age << " = " << i.name << '\n';
     }
