@@ -8,15 +8,13 @@ int main()
 {
     vector<int> v = {2, 4, 5, 9, 1, 3};
 
-    for (int x : v) { cout << x << ' '; }
+    for (int x : v) { cout << x << ' '; } // displays current array
     cout <<'\n';
 
-    // remove first
-    v.erase(v.begin(), v.begin() + 1);
+    v.erase(v.begin(), v.begin() + 1); // remove first
     for (int x: v) { cout << x << ' '; }
     cout << '\n';
 
-    // remove last
-    v.erase(v.begin() + v.size() - 1, v.end());
-    for (int x: v) { cout << x << ' '; }
+    v.erase(v.begin() + v.size() - 1, v.end()); // remove last
+    for (int x: v) { cout << x << ' '; } 
 }
