@@ -11,10 +11,10 @@ int main()
     for (int x : v) { cout << x << ' '; } // displays current array
     cout <<'\n';
 
-    v.erase(v.begin(), v.begin() + 1); // remove first
+    v.erase(v.begin(), v.begin() + 1); // remove first: range 0 - 1 (index 0 gets removed)
     for (int x: v) { cout << x << ' '; }
     cout << '\n';
 
-    v.erase(v.begin() + v.size() - 1, v.end()); // remove last
+    v.erase(v.begin() + v.size() - 1, v.end()); // remove last: range 3 - 4 (index 3 gets removed)
     for (int x: v) { cout << x << ' '; } 
 }
