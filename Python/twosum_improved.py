@@ -18,7 +18,6 @@ target = int(input("Enter target: "))
 twoArr = twosum(arr, target)
 
 if twoArr:
-    for i in twoArr:
-        print(i, end=" ")
+    print(twoArr)
 else:
     print("No two elements in the array add up to the target sum")
