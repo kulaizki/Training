@@ -1,9 +1,4 @@
 # sorted() and sort.
-def display(arr):
-    for i in arr:
-        print(i, end= " ")
-    print()
-
 nums = []
 n = int(input("Enter n: "))
 
@@ -12,14 +7,15 @@ for i in range(n):
     nums.append(element)
 
 nums.sort()
-display(nums)
+print(nums)
 
 nums.sort(reverse=True)
-display(nums)
+print(nums)
 
 sortedNums = sorted(nums)
-display(sortedNums)
+print(sortedNums)
 
-reversed_nums = sorted(nums, reverse=True)
-display(nums)
+reversedNums = sorted(nums, reverse=True)
+print(reversedNums)
+
 
