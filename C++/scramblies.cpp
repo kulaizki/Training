@@ -17,6 +17,6 @@ bool scramble(const string& s1, const string & s2) {
 }
 
 int main() {
-    scramble("rkqodlw", "world") ? cout << "true\n" : cout << "false\n";
-    scramble("cedewaraaossoqqyt", "codewars") ? cout << "true\n" :  cout << "false\n";
+    scramble("rkqodlw", "world") ? cout << "true" : cout << "false" << '\n';
+    scramble("cedewaraaossoqqyt", "codewars") ? cout << "true" :  cout << "false" << '\n';
 }
