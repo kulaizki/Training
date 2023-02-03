@@ -21,6 +21,3 @@ for i in range(1, souls[0]+1):
 
 sorted_souls = sortSouls(souls)
 print(sorted_souls)
-
-
-
