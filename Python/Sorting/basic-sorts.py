@@ -17,8 +17,8 @@ display(nums)
 nums.sort(reverse=True)
 display(nums)
 
-sorted_nums = sorted(nums)
-display(sorted_nums)
+sortedNums = sorted(nums)
+display(sortedNums)
 
 reversed_nums = sorted(nums, reverse=True)
 display(nums)
