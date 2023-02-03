@@ -1,9 +1,11 @@
-def bubbleSort(nums):
+def selectionSort(nums):
     n = len(nums)
     for i in range(n):
-        for j in range(n-i-1):
-            if nums[j] > nums[j+1]:
-                nums[j], nums[j+1] = nums[j+1], nums[j]
+        min_index = i
+        for j in range(i+1, n):
+            if nums[min_index] > nums[j]:
+                min_index = j
+        nums[i], nums[min_index] = nums[min_index], nums[i]
     return nums
 
 nums = []
@@ -14,5 +16,5 @@ for i in range(n):
 
 print()
 print("Current array:", nums)
-bubbleSort(nums)
+selectionSort(nums)
 print("Sorted array:", nums)
