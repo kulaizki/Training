@@ -16,7 +16,7 @@ int main()
         // swap values of smaller and larger
         std::cout << "Swapping the values\n";
 
-        int temp{ larger };
+        int temp{larger};
         larger = smaller;
         smaller = temp;
     } // temp dies here
