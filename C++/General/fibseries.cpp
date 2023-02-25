@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// O(N)
+
 int main()
 {
     int n, num1{ 0 }, num2{ 1 }, sum;
