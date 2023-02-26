@@ -4,11 +4,10 @@ using namespace std;
 
 int binarySearch(vector<int> nums, int x) {
 
-    int mid, low = 0, high = nums.size()-1;
+    int low = 0, high = nums.size()-1;
 
-    while (low <= high)
-    {
-        mid = low + (high-low) / 2;
+    while (low <= high) {
+        int mid = low + (high-low) / 2;
         if (x == nums[mid])
             return mid;
         else if (x > nums[mid])
@@ -29,4 +28,5 @@ int main() {
     cin >> x;
 
     cout << binarySearch(v, x);
+
 }
