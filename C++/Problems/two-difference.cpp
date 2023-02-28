@@ -6,6 +6,7 @@ vector<int> twoDifference(vector<int> nums, int target) {
 
     unordered_map<int, int> mp;
     int len = nums.size();
+
     for (int i = 0; i < len; ++i) {
         int x = nums[i] - target;
         if (mp.find(x) != mp.end()) {
@@ -13,6 +14,7 @@ vector<int> twoDifference(vector<int> nums, int target) {
         }
         mp[nums[i]] = i;
     }
+
     return {};
 }
 
