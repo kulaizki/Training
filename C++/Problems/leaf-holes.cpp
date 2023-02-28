@@ -2,26 +2,24 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
 
     int n;
     cin >> n;
+
     unordered_map<int, int> leaves;
-    for (int i = 0; i < n; ++i)
-    {
-        int size;
-        int holes;
+
+    for (int i = 0; i < n; ++i) {
+        int size, holes;
         cin >> size >> holes;
         leaves[size] += holes;
     }
 
     int minValue = INT_MAX;
     int minKey = -1;
-    for (const auto& [key, value]: leaves)
-    {
-        if (value < minValue)
-        {
+
+    for (const auto& [key, value]: leaves) {
+        if (value < minValue) {
             minValue = value;
             minKey = key;
         }
