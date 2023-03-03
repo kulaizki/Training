@@ -5,10 +5,8 @@ void display(int arr[], int n);
 
 int main() {
 
-    int arr[] = {4, 7, 1, 2, 8, 99};
-    display(arr, 6);
-    selectionSort(arr, 6);
-    display(arr, 6);
+    int arr[] = {4, 7, 1, 2, 8};
+    selectionSort(arr, 5);
 
 }
 
@@ -22,10 +20,11 @@ void selectionSort(int arr[], int n) {
             if (arr[j] < arr[min_index]) {
                 min_index = j;
             }
-            int temp = arr[i];
-            arr[i] = arr[min_index];
-            arr[min_index] = temp;
         }
+        int temp = arr[i];
+        arr[i] = arr[min_index];
+        arr[min_index] = temp;
+        display(arr, n);
     }
 
 }
