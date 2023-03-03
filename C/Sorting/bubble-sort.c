@@ -5,10 +5,8 @@ void display(int arr[], int n);
 
 int main() {
 
-    int arr[] = {4, 7, 1, 2, 8, 99};
-    display(arr, 6);
-    bubbleSort(arr, 6);
-    display(arr, 6);
+    int arr[] = {4, 7, 1, 2, 8};
+    bubbleSort(arr, 5);
 
 }
 
@@ -24,6 +22,7 @@ void bubbleSort(int arr[], int n) {
                 arr[j+1] = temp;
             }
         }
+        display(arr, 5);
     }
 
 }

@@ -6,9 +6,7 @@ void display(int arr[], int n);
 int main() {
 
     int arr[] = {4, 7, 1, 2, 8, 99};
-    display(arr, 6);
     insertionSort(arr, 6);
-    display(arr, 6);
 
 }
 
@@ -24,6 +22,7 @@ void insertionSort(int arr[], int n) {
             j--;
         }
         arr[j+1] = key;
+        display(arr, n);
     }
 
 }
