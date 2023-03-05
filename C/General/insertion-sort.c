@@ -1,13 +1,5 @@
 #include <stdio.h>
 
-void swap(int *x, int *y) {
-
-    int temp = *x;
-    *x = *y;
-    *y = temp;
-
-}
-
 void insertionSort(int arr[], int n) {
 
     int x, y, key;
