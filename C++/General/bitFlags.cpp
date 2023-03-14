@@ -36,6 +36,5 @@ int main()
     bits1 >>= 1;
     std::cout << bits1 << '\n';
 
-
     return 0;
 }
